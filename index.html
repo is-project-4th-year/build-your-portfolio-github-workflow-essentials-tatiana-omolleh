@@ -1,14 +1,16 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -17,62 +19,63 @@
             </ul>
         </nav>
     </header>
-
     <section class="hero">
-        <h1 class="gradient-text">Hello, I'm Tatiana - Web Visionary</h1>
-        <p>Aspiring Web Developer & Designer</p>
+        <h1 class="gradient-text">Hello, I'm Tatiana - Creative Coder</h1>
+        <p>Crafting elegant, responsive websites</p>
         <a href="#projects" class="cta-button">View My Work</a>
     </section>
     <section id="about" class="about">
-    <div class="about-content">
-        <img src="images.jpeg" alt="Tatiana smiling" class="profile-pic">
-        <div>
-            <h2>About Me</h2>
-            <p>Hi! I'm Tatiana, a passionate web developer with a love for clean, responsive design. I enjoy bringing ideas to life in the browser and continuously learning new technologies.</p>
-            <h3>Education & Experience</h3>
-            <ul class="education-list">
-                <li>BSc in Computer Science, ABC University (2025)</li><br>
-                <li>Web Developer Intern, XYZ Agency (Summer 2024)</li>
-            </ul>
+        <div class="about-content">
+            <img src="images.jpeg" alt="Tatiana smiling" class="profile-pic">
+            <div>
+                <h2>About Me</h2>
+                <p>Hi! I'm Tatiana, a passionate web developer with a love for clean, responsive design. I enjoy
+                    bringing ideas to life in the browser and continuously learning new technologies.</p>
+                <h3>Education & Experience</h3>
+                <ul class="education-list">
+                    <li>BSc in Computer Science, Strathmore University</li><br>
+                    <li>Web Developer Intern, KenSAP</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
-<section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-cards">
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>A personal site to showcase my work and resume.</p>
-            <a href="#">View Project</a>
+    </section>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A personal site to showcase my work and resume.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Task Tracker App</h3>
+                <p>A simple to-do list with local storage and filters.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Blog Template</h3>
+                <p>A responsive blog layout using CSS Grid.</p>
+                <a href="#">View Project</a>
+            </div>
         </div>
-        <div class="card">
-            <h3>Task Tracker App</h3>
-            <p>A simple to-do list with local storage and filters.</p>
-            <a href="#">View Project</a>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Tatiana Omolleh. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/tatiana-omolleh" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/tatiana-omolleh" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/tatiana-omolleh" target="_blank">Twitter</a>
         </div>
-        <div class="card">
-            <h3>Blog Template</h3>
-            <p>A responsive blog layout using CSS Grid.</p>
-            <a href="#">View Project</a>
-        </div>
-    </div>
-</section>
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-<footer class="footer">
-    <p>&copy; 2025 Tatiana Omolleh. All rights reserved.</p>
-    <div class="social-links">
-        <a href="https://github.com/tatiana-omolleh" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/tatiana-omolleh" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/tatiana-omolleh" target="_blank">Twitter</a>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>
