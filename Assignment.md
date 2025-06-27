@@ -17,12 +17,6 @@
 - **Pull Requests**: Allowed structured code reviews and safe merges.
 - **Issue Linking**: Ensured each feature closes specific requirements.
 - **Conflict Resolution**: Practiced resolving real conflicts with GitHub’s UI.
-## 3. Learnings from the Git Crash Program
-
-- **Branching**: Helped me separate features and prevent conflicts.
-- **Pull Requests**: Allowed structured code reviews and safe merges.
-- **Issue Linking**: Ensured each feature closes specific requirements.
-- **Conflict Resolution**: Practiced resolving real conflicts with GitHub’s UI.
 
 ## 4. Screenshots of Key GitHub Features
 
