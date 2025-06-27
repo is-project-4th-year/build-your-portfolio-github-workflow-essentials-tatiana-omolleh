@@ -6,12 +6,19 @@ body {
     color: #333;
 }
 
-header {
-    background: #fff;
-    padding: 1rem 2rem;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: background 0.3s;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -26,6 +33,22 @@ header {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #6e8efb;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .hero {
@@ -33,14 +56,17 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: #fff;
+    animation: fadeIn 2s ease;
 }
 
-.hero h1 {
-    font-size: 3rem;
+.gradient-text {
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
 }
 
@@ -57,11 +83,17 @@ header {
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .cta-button:hover {
     background: #6e8efb;
     color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .about {
@@ -179,12 +211,6 @@ header {
 
 .footer .social-links a:hover {
     color: #a777e3;
-}
-.education-list {
-    margin-top: 1rem;
-    list-style: disc;
-    padding-left: 1.5rem;
-    font-size: 1.1rem;
 }
 
 .projects {
