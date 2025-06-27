@@ -35,17 +35,3 @@
 ### E. Merge Conflict Resolution
 ![Merge Conflict Resolution](images/merge-conflict.png)
 
-### A. Milestones and Issues
-![Milestones and Issues](images/milestones.png)
-
-### B. Project Board
-![Project Board](images/project-board.png)
-
-### C. Branching
-![Branching](images/branches.png)
-
-### D. Pull Requests
-![Pull Request](images/pull-request.png)
-
-### E. Merge Conflict Resolution
-![Merge Conflict Resolution](images/merge-conflict.png)
